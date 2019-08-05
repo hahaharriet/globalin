@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>12-window.html</title>
+	<script type="text/javascript">
+		function open1(){
+			window.open('11-open.html')	;	
+			
+		}
+		function open2(){
+			window.open('11-open.html','mywin',width=30,heigh=50);
+		}
+		function open3(){
+			window.open('09-event.html','mywin2',width=30,heigh=50);
+		}
+	</script>
+</head>
+<body>
+	<a href="#" onclick="open2();return false;">open2</a>
+	<a href="#" onclick="open3();return false;">open3</a>
+</body>
+</html>

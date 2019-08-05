@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	//함수의 선언 -자바의 메소드와 비슷하다.
+	function sayHello(){
+		document.write("<h1>안녕하세요.</h1>");
+		document.write("<h2>자바스크립트</h2>");
+	}//도큐먼트는 바디부분에 써라 하는 의미라고 생각해.
+	sayHello();
+	sayHello();
+	
+	
+/* 	function sum(x,y){
+		
+		var z = x+y;
+		return z;
+		
+	} */
+	
+	function sum(x,y){
+		var isStrx = !isNaN(x);
+		var isStry = !isNaN(y);
+	
+		if(!isStrx|| !isStry){
+			return "숫자를 주세요.";
+		}
+		var z = parseInt(x)+parseInt(y);
+		return z;
+	}
+	
+	function  printResult(x,y){
+		var result = sum(x,y);
+		document.write("<h3>"+result+"</h3>");
+	}
+	
+	printResult(5,10);
+	printResult("3",5);
+	printResult("노라","네코");
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
